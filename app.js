@@ -14,12 +14,12 @@
 //        mostrar
 //        subtrair 1
 //]
-let contagem = 'A0';
+let contagem = 'A1';
 let input = prompt('Digite um número para começar a contagem (pro)regressiva:');
 if (contagem == 'A0') {
     contagem = parseInt(contagem) + input;
 }
-if (contagem != 'A0'){
+if (contagem != 'A1'){
         if (contagem == 0) {
             alert(contagem);
             contagem = parseInt(prompt('Digite um número para começar uma nova contagem (pro)regressiva:'));

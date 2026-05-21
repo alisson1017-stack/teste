@@ -1,4 +1,4 @@
-//definir variavel "contagem" = 'A' + 0
+//definir variavel "contagem" = 'A' + 1
 //definir variavel "input" com prompt
 //remover 'A' de contagem
 //adicionar input a contagem
@@ -16,7 +16,7 @@
 //]
 let contagem = 'A1';
 let input = prompt('Digite um número para começar a contagem (pro)regressiva:');
-if (contagem == 'A0') {
+if (contagem == 'A1') {
     contagem = parseInt(contagem) + input;
 }
 if (contagem != 'A1'){

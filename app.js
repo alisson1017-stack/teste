@@ -1,35 +1,20 @@
-//definir variavel "contagem" = 'A' + 1
-//definir variavel "input" com prompt
-//remover 'A' de contagem
-//adicionar input a contagem
-//iniciar loop while contagem for diferente de "A0"
-//    =0
-//        mostrar
-//        pedir novo input
-//        adicionar input a contagem
-//    <0
-//        mostrar
-//        adicionar 1
-//    >0
-//        mostrar
-//        subtrair 1
-//]
-let contagem = 'A1';
-let input = prompt('Digite qualquer número para começar a contagem (pro)regressiva:');
-if (contagem == 'A1') {
-    contagem = parseInt(contagem) + input;
-}
-if (contagem != 'A1'){
-        if (contagem == 0) {
+//Enquanto a função iniciarContagem estiver ativa (sempre)
+//  Pede o input
+//  diferente de zero:
+//      mostrar contagem atual
+//      se contagem menor que zero: +1, se não: -1
+//  igual a zero:
+//      mostra "0"
+
+function iniciarContagem() {
+    while (true) {
+        let contagem = prompt('Digite qualquer número para começar a contagem (pro)regressiva:');
+        while (contagem !== 0) {
             alert(contagem);
-            contagem = parseInt(prompt('Digite um número para começar uma nova contagem (pro)regressiva:'));
+            contagem += contagem < 0 ? 1 : -1;
         }
-    else if (contagem < 0) {
-        alert(contagem);
-        contagem++;
-    }
-    else if (contagem > 0) {
-        alert(contagem);
-        contagem--;
+    alert(0)
     }
 }
+
+iniciarContagem();

@@ -8,7 +8,7 @@
 
 function iniciarContagem() {
     while (true) {
-        let contagem = prompt('Digite qualquer número para começar a contagem (pro)regressiva:');
+        let contagem = parseInt(prompt('Digite qualquer número para começar a contagem (pro)regressiva:'));
         while (contagem !== 0) {
             alert(contagem);
             contagem += contagem < 0 ? 1 : -1;

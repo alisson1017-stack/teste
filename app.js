@@ -15,7 +15,7 @@
 //        subtrair 1
 //]
 let contagem = 'A1';
-let input = prompt('Digite um número para começar a contagem (pro)regressiva:');
+let input = prompt('Digite qualquer número para começar a contagem (pro)regressiva:');
 if (contagem == 'A1') {
     contagem = parseInt(contagem) + input;
 }
